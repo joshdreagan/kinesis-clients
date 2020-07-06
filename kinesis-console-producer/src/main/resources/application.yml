@@ -1,0 +1,21 @@
+# Spring Boot
+spring:
+  banner:
+    location: banner.txt
+
+# Camel Spring Boot
+camel:
+  springboot:
+    name: kinesis-console-producer
+    main-run-controller: true
+  component:
+    aws-kinesis:
+      region: US_WEST_2
+      #access-key: "<AWS_ACCESS_KEY>"
+      #secret-key: "<AWS_SECRET_KEY>"
+
+# Logging
+logging:
+  level:
+    root: ERROR
+    #org.apache.camel.examples: DEBUG
